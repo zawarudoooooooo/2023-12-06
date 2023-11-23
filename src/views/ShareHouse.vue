@@ -8,6 +8,9 @@ export default{
     methods:{
         goExchangePage(){
             this.$router.push('/Exchange')
+        },
+        goLifePage(){
+            this.$router.push('/Life')
         }
     }
 }
@@ -21,13 +24,14 @@ export default{
 <!-- IG 個人主頁照片 -->
         <div class="profile">
             <div class="profile-image">
-                <img src="../../public/mainPagePhoto/exchange photo.jpg" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/sharehouse profile page.jpg" alt="">
             </div>
 <!-- IG 個人主頁資料 -->
             <div class="profile-user-settings">
                 <h1 class="profile-user-name">Share_House</h1>
                 <button class="btn profile-edit-btn">南浦和</button>
                 <button class="btn profile-settings-btn" aria-label="profile settings" @click="goExchangePage"><i class="fa-solid fa-school"></i></button>
+                <button class="btn profile-settings-btn" aria-label="profile settings" @click="goLifePage"><i class="fa-regular fa-images"></i></button>
             </div>
 <!-- IG 個人主頁狀態 -->
             <!-- <div class="profile-stats">
@@ -49,7 +53,7 @@ export default{
 <!-- Share House 相片區域 -->
         <div class="gallery">
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 1.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
@@ -59,7 +63,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1497445462247-4330a224fdb1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 2.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
@@ -69,7 +73,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 3.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -82,7 +86,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1502630859934-b3b41d18206c?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 4.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -95,7 +99,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1498471731312-b6d2b8280c61?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 5.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -108,7 +112,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 6.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -118,7 +122,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 7.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -131,7 +135,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1515814472071-4d632dbc5d4a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 8.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
@@ -141,7 +145,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1511407397940-d57f68e81203?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 9.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -154,7 +158,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 10.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
@@ -164,7 +168,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1505058707965-09a4469a87e4?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 11.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
@@ -174,7 +178,247 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="https://images.unsplash.com/photo-1423012373122-fff0a5d28cc9?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 12.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 30</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 13.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 14.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 15.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 16.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 38</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 17.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 47</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 18.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 19.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 52</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 20.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 21.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 45</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 22.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 23.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 24.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 30</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 25.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 26.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 52</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 27.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 28.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 45</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 29.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 30.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 31.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-type">
+                    <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+                </div>
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 30</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 32.jpg" class="gallery-image" alt="">
+                <div class="gallery-item-info">
+                    <ul>
+                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
+                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gallery-item" tabindex="0">
+                <img src="../../public/exchagePagePhoto/sharehouse/share 33.jpg" class="gallery-image" alt="">
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
