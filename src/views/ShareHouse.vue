@@ -1,9 +1,18 @@
 <script>
+import VLazyImage from "v-lazy-image";
 export default{
     data(){
         return{
 
         }
+    },
+    beforeRouteEnter(to,form,next){
+            window.document.body.style.backgroundColor="#fff9ed"
+            next()
+    },
+    beforeRouteLeave(to,form,next){
+            window.document.body.style.backgroundColor="#FFF0F5"
+            next()
     },
     methods:{
         goExchangePage(){
@@ -12,10 +21,11 @@ export default{
         goLifePage(){
             this.$router.push('/Life')
         }
+    },
+    components: {
+        VLazyImage
     }
 }
-
-
 </script>
 
 <template>
@@ -53,7 +63,7 @@ export default{
 <!-- Share House 相片區域 -->
         <div class="gallery">
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 1.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 1.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
@@ -63,7 +73,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 2.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 2.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
@@ -73,7 +83,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 3.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 3.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -86,7 +96,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 4.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 4.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -99,7 +109,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 5.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 5.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -112,7 +122,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 6.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 6.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -122,7 +132,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 7.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 7.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -135,7 +145,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 8.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 8.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
@@ -145,7 +155,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 9.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 9.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -158,7 +168,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 10.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 10.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
@@ -168,7 +178,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 11.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 11.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
@@ -178,7 +188,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 12.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 12.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -191,7 +201,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 13.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 13.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
@@ -201,7 +211,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 14.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 14.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
@@ -211,7 +221,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 15.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 15.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -224,7 +234,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 16.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 16.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -237,7 +247,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 17.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 17.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -250,7 +260,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 18.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 18.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -260,7 +270,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 19.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 19.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -273,7 +283,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 20.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 20.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
@@ -283,7 +293,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 21.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 21.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -296,7 +306,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 22.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 22.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
@@ -306,7 +316,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 23.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 23.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
@@ -316,7 +326,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 24.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 24.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -329,7 +339,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 25.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 25.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -339,7 +349,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 26.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 26.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -352,7 +362,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 27.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 27.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
@@ -362,7 +372,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 28.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 28.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -375,7 +385,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 29.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 29.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
@@ -385,7 +395,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 30.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 30.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
@@ -395,7 +405,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 31.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 31.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -408,7 +418,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 32.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 32.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
@@ -418,7 +428,7 @@ export default{
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/sharehouse/share 33.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/sharehouse/share 33.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>

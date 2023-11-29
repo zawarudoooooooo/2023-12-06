@@ -269,12 +269,13 @@ export default{
             text-align: center;
 
             i{
+                color: aliceblue;
                 margin-right: 2vmin;
                 margin-top: 4vmin;
                 transition: 0.3s;
 
                 &:hover{
-                    color: aliceblue;
+                    color: lightblue;
                 }
 
                 &:active{

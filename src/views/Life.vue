@@ -1,9 +1,18 @@
 <script>
+import VLazyImage from "v-lazy-image";
     export default{
         data(){
             return{
 
             }
+        },
+        beforeRouteEnter(to,form,next){
+            window.document.body.style.backgroundColor="#E3F0FB"
+            next()
+        },
+        beforeRouteLeave(to,form,next){
+            window.document.body.style.backgroundColor="#FFF0F5"
+            next()
         },
         methods:{
             goShareHousePage(){
@@ -12,9 +21,11 @@
             goExchangePage(){
             this.$router.push('/Exchange')
             },
+        },
+        components: {
+            VLazyImage
         }
     }
-
 </script>
 
 <template>
@@ -28,7 +39,7 @@
 <!-- IG 個人主頁資料 -->
             <div class="profile-user-settings">
                 <h1 class="profile-user-name">Japan_Life</h1>
-                <!-- <button class="btn profile-edit-btn">芝浦</button> -->
+                <button class="btn profile-edit-btn">東京．埼玉</button>
                 <button class="btn profile-settings-btn" aria-label="profile settings" @click="goExchangePage"><i class="fa-solid fa-school"></i></button>
                 <button class="btn profile-settings-btn" aria-label="profile settings" @click="goShareHousePage"><i class="fa-solid fa-house"></i></button>
             </div>
@@ -52,7 +63,7 @@
 <!-- Share House 相片區域 -->
         <div class="gallery">
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 1.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 1.jpg" class="gallery-image" alt=""/>
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
@@ -62,7 +73,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 2.jpg" class="gallery-image" alt="">
+                <v-lazy-image  src="../../public/exchagePagePhoto/life/life 2.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
@@ -72,7 +83,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 3.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 3.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -85,7 +96,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 4.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 4.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -98,7 +109,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 5.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 5.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -111,7 +122,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 6.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 6.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -121,7 +132,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 7.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 7.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -134,7 +145,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 8.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 8.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
@@ -144,7 +155,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 9.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 9.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -157,7 +168,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 10.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 10.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
@@ -167,7 +178,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 11.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 11.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
@@ -177,7 +188,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 12.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 12.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -190,7 +201,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 13.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 13.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
@@ -200,7 +211,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 14.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 14.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
@@ -210,7 +221,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 15.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 15.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -223,7 +234,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 16.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 16.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -236,7 +247,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 17.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 17.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -249,7 +260,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 18.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 18.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -259,7 +270,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 19.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 19.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -272,7 +283,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 20.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 20.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
@@ -282,7 +293,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/life/life 21.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/life/life 21.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -294,14 +305,9 @@
                 </div>
             </div>
         </div>
-
-        <div class="loader">
-        </div>
+        <!-- <div class="loader">
+        </div> -->
     </div>
-
-    
-
-
 </template>
 
 <style lang="scss" scoped>

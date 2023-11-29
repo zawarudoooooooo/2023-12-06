@@ -1,9 +1,18 @@
 <script>
+import VLazyImage from "v-lazy-image";
     export default{
         data(){
             return{
 
             }
+        },
+        beforeRouteEnter(to,form,next){
+            window.document.body.style.backgroundColor="#EEFBFA"
+            next()
+        },
+        beforeRouteLeave(to,form,next){
+            window.document.body.style.backgroundColor="#FFF0F5"
+            next()
         },
         methods:{
             goShareHousePage(){
@@ -12,9 +21,11 @@
             goLifePage(){
                 this.$router.push('/Life')
             }
+        },
+        components: {
+            VLazyImage
         }
     }
-
 </script>
 
 <template>
@@ -52,7 +63,7 @@
 <!-- Share House 相片區域 -->
         <div class="gallery">
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 1.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 1.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
@@ -62,7 +73,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 2.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 2.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
@@ -72,7 +83,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 3.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 3.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -85,7 +96,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 4.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 4.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -98,7 +109,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 5.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 5.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -111,7 +122,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 6.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 6.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -121,7 +132,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 7.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 7.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -134,7 +145,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 8.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 8.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
@@ -144,7 +155,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 9.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 9.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -157,7 +168,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 10.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 10.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
@@ -167,7 +178,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 11.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 11.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
@@ -177,7 +188,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 12.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 12.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -190,7 +201,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 13.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 13.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
@@ -200,7 +211,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 14.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 14.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
@@ -210,7 +221,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 15.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 15.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -223,7 +234,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 16.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 16.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -236,7 +247,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 17.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 17.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -249,7 +260,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 18.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 18.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -259,7 +270,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 19.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 19.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -272,7 +283,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 20.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 20.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
@@ -282,7 +293,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 21.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 21.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -295,7 +306,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 22.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 22.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
@@ -305,7 +316,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 23.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 23.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
@@ -315,7 +326,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 24.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 24.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
                 </div>
@@ -328,7 +339,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 25.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 25.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
@@ -338,7 +349,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 26.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 26.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-type">
                     <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
                 </div>
@@ -351,7 +362,7 @@
             </div>
 
             <div class="gallery-item" tabindex="0">
-                <img src="../../public/exchagePagePhoto/school/exchange 27.jpg" class="gallery-image" alt="">
+                <v-lazy-image src="../../public/exchagePagePhoto/school/exchange 27.jpg" class="gallery-image" alt="" />
                 <div class="gallery-item-info">
                     <ul>
                         <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
