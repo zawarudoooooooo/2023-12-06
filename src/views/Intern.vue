@@ -85,32 +85,35 @@
         margin-bottom: 5vmin;
     }
     .scroller_containerOne {
-        height: 50vh;
+        height: 35vh;
         overflow: hidden;
         margin-bottom: 10vmin;
         .scrollerOne {
-            height: 50vh;
+            height: 35vh;
             font-size: 0px;
             white-space: nowrap;
             animation: scroller 30s linear infinite;
             .slide{
                 img{
-                    height: 50vh;
+                    width: 25vw;
+                    height: 40vh;
                 }
             }
         }
     }
     .scroller_containerTwo {
-        height: 50vh;
+        height: 35vh;
         overflow: hidden;
+        margin-bottom: 5vmin;
         .scrollerTwo {
-            height: 50vh;
+            height: 35vh;
             font-size: 0px;
             white-space: nowrap;
             animation: scroller 30s linear infinite;
             .slide{
                 img{
-                    height: 50vh;
+                    width: 25vw;
+                    height: 40vh;
                 }
             }
         }
@@ -143,22 +146,25 @@
             margin-top: 5vmin;
         }
         .scroller_containerOne{
+            height: 18vh;
+            margin-bottom: 10vmin;
             .scrollerOne{
+                height: 18vh;
                 .slide{
-                    width: 30vw;
                     img{
-                        width: 30vw;
+                        width: 36vw;
                         height: 18vh;
                     }
                 }
             }
         }
         .scroller_containerTwo{
+            height: 18vh;
             .scrollerTwo{
+                height: 18vh;
                 .slide{
-                    width: 30vw;
                     img{
-                        width: 30vw;
+                        width: 36vw;
                         height: 18vh;
                     }
                 }
@@ -170,30 +176,53 @@
             margin-top: 3vmin;
             font-size: 25pt;
         }
-    }
-    @media(max-width:576px){
-        p{
-            font-size: 18pt;
-            margin-top: 1vmin;
-        }
         .scroller_containerOne{
-            margin-bottom: 7vmin;
             .scrollerOne{
+                height: 16vh;
                 .slide{
-                    width: 25vw;
                     img{
-                        width: 25vw;
-                        height: 15vh;
+                        width: 35vw;
+                        height: 16vh;
                     }
                 }
             }
         }
         .scroller_containerTwo{
             .scrollerTwo{
+                height: 16vh;
                 .slide{
-                    width: 25vw;
                     img{
-                        width: 25vw;
+                        width: 35vw;
+                        height: 16vh;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:576px){
+        p{
+            font-size: 16pt;
+        }
+        .scroller_containerOne{
+            margin-bottom: 13vmin;
+            height: 15vh;
+            .scrollerOne{
+                height: 15vh;
+                .slide{
+                    img{
+                        width: 49vw;
+                        height: 15vh;
+                    }
+                }
+            }
+        }
+        .scroller_containerTwo{
+            height: 15vh;
+            .scrollerTwo{
+                height: 15vh;
+                .slide{
+                    img{
+                        width: 49vw;
                         height: 15vh;
                     }
                 }
@@ -203,6 +232,32 @@
     @media(max-width:414px){
         p{
             font-size: 14pt;
+            margin-bottom: 5vmin;
+        }
+        .scroller_containerOne{
+            height: 16vh;
+            margin-bottom: 15vmin;
+            .scrollerOne{
+                height: 16vh;
+                .slide{
+                    img{
+                        width: 52vw;
+                        height: 16vh;
+                    }
+                }
+            }
+        }
+        .scroller_containerTwo{
+            height: 16vh;
+            .scrollerTwo{
+                height: 16vh;
+                .slide{
+                    img{
+                        width: 52vw;
+                        height: 16vh;
+                    }
+                }
+            }
         }
     }
 </style>
