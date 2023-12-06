@@ -441,7 +441,8 @@ export default{
             </div>
         </div>
 
-        <div class="loader">
+        <div class="loading">
+            <div></div>
         </div>
     </div>
 </template>
@@ -567,7 +568,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     margin: -1rem -1rem;
-    padding-bottom: 3rem;
 }
 
 .gallery-item {
@@ -624,27 +624,134 @@ img {
 }
 
 /* Loader */
-.loader {
-    width: 5rem;
-    height: 5rem;
-    border: 0.6rem solid #999;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: loader 500ms linear infinite;
+.loading,
+.loading > div {
+  position: relative;
+  box-sizing: border-box;
 }
+
+.loading {
+  display: block;
+  font-size: 0;
+  color: #333;
+  margin: auto;
+}
+
+.loading.la-dark {
+  color: #333;
+}
+
+.loading > div {
+  display: inline-block;
+  float: none;
+  background-color: currentColor;
+  border: 0 solid currentColor;
+}
+
+.loading {
+  width: 13vmin;
+  height: 13vmin;
+}
+
+.loading > div {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-width: 2px;
+  border-radius: 0;
+  animation: square-loader 2s infinite ease;
+}
+
+.loading > div:after {
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  content: "";
+  background-color: currentColor;
+  animation: square-loader-inner 2s infinite ease-in;
+}
+
+.loading.la-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.loading.la-sm > div {
+  border-width: 1px;
+}
+
+.loading.la-2x {
+  width: 64px;
+  height: 64px;
+}
+
+.loading.la-2x > div {
+  border-width: 4px;
+}
+
+.loading.la-3x {
+  width: 96px;
+  height: 96px;
+}
+
+.loading.la-3x > div {
+  border-width: 6px;
+}
+
+@keyframes square-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes square-loader-inner {
+  0% {
+    height: 0;
+  }
+
+  25% {
+    height: 0;
+  }
+
+  50% {
+    height: 100%;
+  }
+
+  75% {
+    height: 100%;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
 /* Media Query */
 @media screen and (max-width: 40rem) {
     .profile {
         display: flex;
         flex-wrap: wrap;
-        padding: 4rem 0;
+        padding: 0;
     }
-
     .profile::after {
         display: none;
     }
-
     .profile-image,
     .profile-user-settings,
     .profile-bio,
@@ -652,71 +759,53 @@ img {
         float: none;
         width: auto;
     }
-
     .profile-image img {
         width: 7.7rem;
     }
-
     .profile-user-settings {
         flex-basis: calc(100% - 10.7rem);
         display: flex;
         flex-wrap: wrap;
         margin-top: 1rem;
     }
-
     .profile-user-name {
         font-size: 2.2rem;
     }
-
     .profile-edit-btn {
         order: 1;
         padding: 0;
         text-align: center;
         margin-top: 1rem;
     }
-
     .profile-edit-btn {
         margin-left: 0;
     }
-
     .profile-bio {
         font-size: 1.4rem;
         margin-top: 1.5rem;
     }
-
     .profile-edit-btn,
     .profile-bio,
     .profile-stats {
         flex-basis: 100%;
     }
-
     .profile-stats {
         order: 1;
         margin-top: 1.5rem;
     }
-
     .profile-stats ul {
         display: flex;
         text-align: center;
-        padding: 1.2rem 0;
         border-top: 0.1rem solid #dadada;
         border-bottom: 0.1rem solid #dadada;
     }
-
     .profile-stats li {
         font-size: 1.4rem;
         flex: 1;
         margin: 0;
     }
-
     .profile-stat-count {
         display: block;
-    }
-}
-/* Spinner Animation */
-@keyframes loader {
-    to {
-        transform: rotate(360deg);
     }
 }
 @supports (display: grid) {
@@ -727,17 +816,14 @@ img {
         grid-column-gap: 3rem;
         align-items: center;
     }
-
     .profile-image {
         grid-row: 1 / -1;
     }
-
     .gallery {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-        grid-gap: 2rem;
+        grid-gap: 0;
     }
-
     .profile-image,
     .profile-user-settings,
     .profile-stats,
@@ -751,31 +837,58 @@ img {
     @media (max-width: 40rem) {
         .profile {
             grid-template-columns: auto 1fr;
-            grid-row-gap: 1.5rem;
+            grid-row-gap: 1.2rem;
         }
-
         .profile-image {
             grid-row: 1 / 2;
         }
-
         .profile-user-settings {
             display: grid;
-            grid-template-columns: auto 1fr;
             grid-gap: 1rem;
         }
-
         .profile-edit-btn,
         .profile-stats,
         .profile-bio {
             grid-column: 1 / -1;
         }
-
+        .profile-edit-btn{
+            font-size: 1rem;
+        }
         .profile-user-settings,
         .profile-edit-btn,
         .profile-settings-btn,
         .profile-bio,
         .profile-stats {
             margin: 0;
+        }
+        .profile-user-name{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .profile-settings-btn{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 11pt;
+            text-align: center;
+        }
+        .gallery-image{
+            width: 90%;
+            height: 90%;
+        }
+        .gallery-item-type{
+            top: 0;
+            right: 3rem;
+            font-size: 2rem
+        }
+        .gallery-item:hover .gallery-item-info{
+            width: 90%;
+            height: 90%;
+        }
+        .gallery-item-info{
+            ul{
+                margin-right: 1rem;
+            }
         }
     }
 }

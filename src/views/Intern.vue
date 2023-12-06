@@ -85,30 +85,36 @@
         margin-bottom: 5vmin;
     }
     .scroller_containerOne {
-        height: 20vw;
+        height: 50vh;
         overflow: hidden;
         margin-bottom: 10vmin;
+        .scrollerOne {
+            height: 50vh;
+            font-size: 0px;
+            white-space: nowrap;
+            animation: scroller 30s linear infinite;
+            .slide{
+                img{
+                    height: 50vh;
+                }
+            }
+        }
     }
-
     .scroller_containerTwo {
-        height: 20vw;
+        height: 50vh;
         overflow: hidden;
+        .scrollerTwo {
+            height: 50vh;
+            font-size: 0px;
+            white-space: nowrap;
+            animation: scroller 30s linear infinite;
+            .slide{
+                img{
+                    height: 50vh;
+                }
+            }
+        }
     }
-
-    .scrollerOne {
-        height: 40vh;
-        font-size: 0px;
-        white-space: nowrap;
-        animation: scroller 30s linear infinite;
-    }
-
-    .scrollerTwo {
-        height: 40vh;
-        font-size: 0px;
-        white-space: nowrap;
-        animation: scroller 30s linear infinite;
-    }
-
     .slide {
         height: 100%;
         aspect-ratio: 1.5/1;
@@ -128,6 +134,75 @@
         }
         to {
             transform: translateX(-162.344%);
+        }
+    }
+
+    @media(max-width:1200px){
+        p{
+            margin-bottom: 5vmin;
+            margin-top: 5vmin;
+        }
+        .scroller_containerOne{
+            .scrollerOne{
+                .slide{
+                    width: 30vw;
+                    img{
+                        width: 30vw;
+                        height: 18vh;
+                    }
+                }
+            }
+        }
+        .scroller_containerTwo{
+            .scrollerTwo{
+                .slide{
+                    width: 30vw;
+                    img{
+                        width: 30vw;
+                        height: 18vh;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:992px){
+        p{
+            margin-top: 3vmin;
+            font-size: 25pt;
+        }
+    }
+    @media(max-width:576px){
+        p{
+            font-size: 18pt;
+            margin-top: 1vmin;
+        }
+        .scroller_containerOne{
+            margin-bottom: 7vmin;
+            .scrollerOne{
+                .slide{
+                    width: 25vw;
+                    img{
+                        width: 25vw;
+                        height: 15vh;
+                    }
+                }
+            }
+        }
+        .scroller_containerTwo{
+            .scrollerTwo{
+                .slide{
+                    width: 25vw;
+                    img{
+                        width: 25vw;
+                        height: 15vh;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:414px){
+        p{
+            font-size: 14pt;
         }
     }
 </style>

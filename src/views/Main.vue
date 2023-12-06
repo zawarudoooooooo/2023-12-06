@@ -100,164 +100,159 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-.content{
-    width: 100vw;
-    height: 120vh;
-    text-align: center;
-    color: rgb(99, 113, 109);
-
-    .firstArea{
+    .content{
         width: 100vw;
-        display: flex;
-        justify-content: space-around;
-
+        height: 120vh;
+        text-align: center;
+        color: rgb(99, 113, 109);
+        .firstArea{
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
 //交換
-        .exchange{
-            .exchangeTitle{
-                margin-bottom: 2vmin;
+            .exchange{
+                .exchangeTitle{
+                    margin-bottom: 2vmin;
 
-                span{
-                    font-size: 24pt;
+                    span{
+                        font-size: 24pt;
+                    }
                 }
-            }
-            .exchangePhoto{
-                height: 35vh;
-                img{
-                    width: 35vmin;
-                    height: 35vmin;
-                    border-radius: 5px;
-                    transition: 0.3s;
+                .exchangePhoto{
+                    height: 35vh;
+                    img{
+                        width: 35vmin;
+                        height: 35vmin;
+                        border-radius: 5px;
+                        transition: 0.3s;
 
-                &:hover{
-                    scale: 1.1;
-                    opacity: 0.5;
-                }
+                        &:hover{
+                            scale: 1.1;
+                            opacity: 0.5;
+                        }
 
-                &:active{
-                    scale: 1;
-                    border-radius: 50%;
+                        &:active{
+                            scale: 1;
+                            border-radius: 50%;
+                        }
+                    } 
                 }
-                }
-            }
-        }    
-
+            }    
 //關於我
-        .profile{
-            .profileTitle{
-                margin-bottom: 2vmin;
+            .profile{
+                .profileTitle{
+                    margin-bottom: 2vmin;
 
-                span{
-                    font-size: 24pt;
+                    span{
+                        font-size: 24pt;
+                    }
+                }
+                .profilePhoto{
+                    height: 35vh;
+                    img{
+                        width: 35vmin;
+                        height: 35vmin;
+                        border-radius: 5px;
+                        transition: 0.3s;
+
+                        &:hover{
+                            scale: 1.1;
+                            opacity: 0.5;
+                        }
+
+                        &:active{
+                            scale: 1;
+                            border-radius: 50%;
+                        }
+                    }
                 }
             }
-            .profilePhoto{
-                height: 35vh;
-                img{
-                    width: 35vmin;
-                    height: 35vmin;
-                    border-radius: 5px;
-                    transition: 0.3s;
-
-                &:hover{
-                    scale: 1.1;
-                    opacity: 0.5;
-                }
-
-                &:active{
-                    scale: 1;
-                    border-radius: 50%;
-                }
-                }
-            }
-        }
-
 //實習
-        .internship{
-            .internshipTitle{
-                margin-bottom: 2vmin;
+            .internship{
+                .internshipTitle{
+                    margin-bottom: 2vmin;
 
-                span{
-                    font-size: 24pt;
+                    span{
+                        font-size: 24pt;
+                    }
+                }
+                .internshipPhoto{
+                    height: 35vh;
+                    img{
+                        width: 36vmin;
+                        height: 35vmin;
+                        border-radius: 5px;
+                        transition: 0.3s;
+
+                        &:hover{
+                            scale: 1.1;
+                            opacity: 0.5;
+                        }
+
+                        &:active{
+                            scale: 1;
+                            border-radius: 50%;
+                        }
+                    }   
+                }
+            }      
+        }
+//學歷和證照  
+        .middleArea{
+            width: 70vw;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 25vmin;
+            .school{
+
+                p{
+                    font-size: 22pt;
+                }
+
+                ul{
+                    display: inline-block;
+
+                    li{
+                        font-size: 13pt;
+                    }
                 }
             }
-            .internshipPhoto{
-                height: 35vh;
-                img{
-                    width: 36vmin;
-                    height: 35vmin;
-                    border-radius: 5px;
-                    transition: 0.3s;
+            .skill{
 
-                &:hover{
-                    scale: 1.1;
-                    opacity: 0.5;
+                p{
+                    font-size: 22pt;
                 }
 
-                &:active{
-                    scale: 1;
-                    border-radius: 50%;
-                }
-                }
-            }
-        }      
-    }
+                ul{
+                    display: inline-block;
 
-//學歷和證照    
-    .middleArea{
-        width: 70vw;
-        height: 40vh;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-left: 25vmin;
-        .school{
-
-            p{
-                font-size: 22pt;
-            }
-
-            ul{
-                display: inline-block;
-
-                li{
-                font-size: 13pt;
+                    li{
+                        font-size: 13pt;
+                    }
                 }
             }
         }
-        .skill{
-            p{
-                font-size: 22pt;
-            }
-
-            ul{
-                display: inline-block;
-
-                li{
-                    font-size: 13pt;
-                }
-            }
-        }
-    }
-
 //工作經歷    
-    .buttonArea{
-        height: 25vh;
-        .work{
-            p{
-                font-size: 22pt;
-            }
+        .buttonArea{
+            height: 25vh;
+            .work{
+                
+                p{
+                    font-size: 22pt;
+                }
         
-            ul{
-                display: inline-block;
+                ul{
+                    display: inline-block;
 
-                li{
-                    font-size: 13pt;
+                    li{
+                        font-size: 13pt;
+                    }
                 }
             }
         }
     }
-}
-
     .footer{
         width: 100vw;
         height: 10vh;
@@ -284,4 +279,274 @@ export default{
             }
         }
     } 
+
+//Media
+@media(max-width:1200px){
+    .content{
+        height: 70.5vh;
+        .firstArea{
+            height: 30vh;
+            .exchange{
+                .exchangeTitle{
+                    margin-bottom: 1vmin;
+                    span{
+                        font-size: 22pt;
+                    }
+                }
+                .exchangePhoto{
+                    img{
+                        width: 30vmin;
+                        height: 30vmin;
+                    }
+                }
+            }
+            .profile{
+                .profileTitle{
+                    margin-bottom: 1vmin;
+                    span{
+                        font-size: 22pt;
+                    }
+                }
+                .profilePhoto{
+                    img{
+                        width: 30vmin;
+                        height: 30vmin;
+                    }
+                }
+            }
+            .internship{
+                .internshipTitle{
+                    margin-bottom: 1vmin;
+                    span{
+                        font-size: 22pt;
+                    }
+                }
+                .internshipPhoto{
+                    img{
+                        width: 30vmin;
+                        height: 30vmin;
+                    }
+                }
+            }
+        }
+        .middleArea{
+            margin-left: 8vmin;
+            height: 20vh;
+
+            .school{
+                ul{
+                    li{
+                        font-size: 16pt;
+                    }
+                }
+            }
+            .skill{
+                ul{
+                    li{
+                        font-size: 17pt;
+                    }
+                }
+            }
+        }
+        .buttonArea{
+            height: 15vh;
+            .work{
+                ul{
+                    li{
+                        font-size: 16pt;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:992px){
+    .content{
+        .middleArea{
+            .school{
+                ul{
+                    li{
+                        font-size: 15pt;
+                    }
+                }
+            }
+            .skill{
+                ul{
+                    li{
+                        font-size: 15pt;
+                    }
+                }
+            }
+        }
+
+        .buttonArea{
+            .work{
+                ul{
+                    li{
+                        font-size: 14pt;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:576px){
+    .content{
+        height: 72.5vh;
+        .firstArea{
+            height: 23vh;
+            .exchange{
+                .exchangeTitle{
+                    span{
+                        font-size: 13pt;
+                    }
+                }
+            }
+            .profile{
+                .profileTitle{
+                    span{
+                        font-size: 13pt;
+                    }
+                }
+            }
+            .internship{
+                .internshipTitle{
+                    span{
+                        font-size: 13pt;
+                    }
+                }
+            }
+        }
+        .middleArea{
+            width: 80vw;
+            height: 26vh;
+            display: inline-block;
+            .school{
+                margin-left: 0;
+                margin-right: 7vmin;
+                margin-bottom: 4vmin;
+                p{
+                    font-size: 14pt;
+                    margin-bottom: 0;
+                }
+                ul{
+                    li{
+                        font-size: 12pt;
+                    }
+                }
+            }
+            .skill{
+                margin-left: 0;
+                margin-right: 8vmin;
+                margin-bottom: 4vmin;
+                p{
+                    font-size: 13pt;
+                    margin-bottom: 0;
+                }
+                ul{
+                    li{
+                        font-size: 12pt;
+                        margin-right: 8vmin;
+                    }
+                }
+            }
+        }
+        .buttonArea{
+            margin-top: 5vmin;
+            .work{
+                p{
+                    font-size: 13pt;
+                    margin-bottom: 1vmin;
+                }
+                ul{
+                    li{
+                        font-size: 10pt;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        height: 13vh;
+        padding-top: 6vmin;
+        .icon{
+            font-size: 23pt;
+        }
+    }
+}
+@media(max-width:414px){
+    .content{
+        height: 73.5vh;
+        .firstArea{
+            height: 25vh;
+            .exchange{
+                .exchangeTitle{
+                    span{
+                        font-size: 10pt;
+                    }
+                }
+            }
+            .profile{
+                .profileTitle{
+                    span{
+                        font-size: 10pt;
+                    }
+                }
+            }
+            .internship{
+                .internshipTitle{
+                    span{
+                        font-size: 10pt;
+                    }
+                }
+            }
+        }
+        .middleArea{
+            width: 85vw;
+            .school{
+                margin-bottom: 1vmin;
+                p{
+                    font-size: 12pt;
+                }
+                ul{
+                    li{
+                        font-size: 10pt;
+                    }
+                }
+            }
+            .skill{
+                height: 10vh;
+                margin-bottom: 0;
+                p{
+                    font-size: 10pt;
+                }
+                ul{
+                    li{
+                        font-size: 9pt;
+                    }
+                }
+            }
+        }
+        .buttonArea{
+            margin-top: 5vmin;
+            .work{
+                p{
+                    font-size: 12pt;
+                }
+                ul{
+                    li{
+                        font-size: 8pt;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        height: 14vh;
+        padding-top: 3vmin;
+        .icon{
+            font-size: 18pt;
+        }
+    }
+}
 </style>

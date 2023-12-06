@@ -38,4 +38,22 @@ export default{
         }
     }
 }
+
+//Media
+@media(max-width:1024px){
+    .logo{
+        height: 18vh;
+        margin-top: 2vmin;
+    }
+}
+@media(max-width:992px){
+    .logo{
+        height: 18vh;
+    }
+}
+@media(max-width:576px){
+    .logo{
+        height: 14vh;
+    }
+}
 </style>
