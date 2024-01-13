@@ -120,6 +120,7 @@
     }
     .slide {
         height: 100%;
+        //長寬比
         aspect-ratio: 1.5/1;
         margin: 0px 0.78%;
         display: inline-block;
